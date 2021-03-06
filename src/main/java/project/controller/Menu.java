@@ -1,13 +1,15 @@
 package project.controller;
 
+import project.service.AddUser;
 import project.service.ShowNodeList;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import java.util.Scanner;
 
 public class Menu {
 
-    public static void menu (EntityManager manager) {
+    public static void menu (EntityManager manager, EntityTransaction transaction) {
         Scanner sc = new Scanner(System.in);
         int choice;
         do  {
@@ -44,7 +46,7 @@ public class Menu {
                     break;
                 case 5:
                     System.out.println("Dodaj użytkownika: ");
-
+                    AddUser.addUser(manager,transaction);
                     break;
                 case 6:
                     System.out.println("Dodaj połączenie: ");
