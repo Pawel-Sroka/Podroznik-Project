@@ -9,7 +9,8 @@ public class Menu {
 
     public static void menu (EntityManager manager) {
         Scanner sc = new Scanner(System.in);
-        while (true) {
+        int choice;
+        do  {
             System.out.println("\n******* Witamy w Podróżnik 2.0 *******\n");
             System.out.println("1. Lista dostępnych połączeń ");
             System.out.println("2. Dokonaj rezerwacji ");
@@ -24,7 +25,7 @@ public class Menu {
 
             System.out.println("Wybierz opcję: ");
 
-            int choice = sc.nextInt();
+            choice = sc.nextInt();
 
             switch (choice) {
                 case 1:
@@ -65,6 +66,7 @@ public class Menu {
             }
 
         }
+        while (choice != 10);
     }
 
 
