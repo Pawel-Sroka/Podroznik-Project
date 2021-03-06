@@ -4,10 +4,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Data
@@ -20,6 +19,13 @@ public class Reservations {
     private ReservationStatus status;
     @ManyToOne
     private Users users;
+    @OneToMany(mappedBy = "reservations")
+    private Set<Tickets> ticketsSet =new HashSet<>();
+
+    public void addTicket(Tickets tickets){
+        ticketsSet.add(tickets);
+        tickets.setReservations(this);
+    }
 
 
 }

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 @Data
@@ -15,6 +16,8 @@ public class Tickets {
     @GeneratedValue
     private Long ticketId;
     private Long price;
+    @ManyToOne
+    private Reservations reservations;
     /*@ManyToOne
     private Transit transit;*/
 
