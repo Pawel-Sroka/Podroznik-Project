@@ -18,7 +18,7 @@ public class Tickets {
     private Long price;
     @ManyToOne
     private Reservations reservations;
-    /*@ManyToOne
-    private Transit transit;*/
+    @ManyToOne
+    private Transit transit;
 
 }

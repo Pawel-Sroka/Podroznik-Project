@@ -20,9 +20,9 @@ public class Reservations {
     @ManyToOne
     private Users users;
     @OneToMany(mappedBy = "reservations")
-    private Set<Tickets> ticketsSet =new HashSet<>();
+    private Set<Tickets> ticketsSet = new HashSet<>();
 
-    public void addTicket(Tickets tickets){
+    public void addTicket(Tickets tickets) {
         ticketsSet.add(tickets);
         tickets.setReservations(this);
     }
