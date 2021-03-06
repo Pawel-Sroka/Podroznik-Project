@@ -4,9 +4,9 @@
         "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/library</property>
-        <property name="hibernate.connection.username">library_user</property>
-        <property name="hibernate.connection.password">password</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/podroznik</property>
+        <property name="hibernate.connection.username">podroznik</property>
+        <property name="hibernate.connection.password">podroznik1234</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
