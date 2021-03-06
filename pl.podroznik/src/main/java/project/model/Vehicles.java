@@ -18,6 +18,8 @@ public class Vehicles {
     private Integer seatsNumber;
     private VehicleType vehicleType;
     @ManyToOne
+    private Transit transit;
+    @ManyToOne
     private TransportCompany company;
     @ManyToMany(mappedBy = "vehiclesSet")//iw vehicle jest opis relacji
     private Set<Drivers> driverSet = new HashSet<>();
