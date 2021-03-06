@@ -16,6 +16,6 @@ public class Transit {
     @GeneratedValue
     private Long transitId;
     private LocalDateTime departueTime;//TODO if have time, change to zoned datetime
-
+    private LocalDateTime arrivalTime;
 
 }
