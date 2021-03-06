@@ -14,17 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d57d0e12-9c8f-4aff-8e97-2f12d4cf488d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pl.podroznik/src/main/resources/hibernate-h2.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/ComunicationNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/ComunicationNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/ComunicationNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/ComunicationNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pl.podroznik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pl.podroznik/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -80,8 +71,8 @@
       <recent name="main.java.project" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Gamer\IdeaProjects\Junit-Basic\Podroznik-Project\pl.podroznik" />
       <recent name="C:\Users\Gamer\IdeaProjects\Junit-Basic\Podroznik-Project\pl.podroznik\src\main\resources" />
+      <recent name="C:\Users\Gamer\IdeaProjects\Junit-Basic\Podroznik-Project\pl.podroznik" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
@@ -227,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615035138667</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Transit - ComunicationNode relation added">
+      <created>1615037183858</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615037183858</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,37 +252,38 @@
     <MESSAGE value="users-reservations relation, fixed" />
     <MESSAGE value="Tickets-Reservations relation" />
     <MESSAGE value="Tickets-Transit relation + user, Reservations refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tickets-Transit relation + user, Reservations refactor" />
+    <MESSAGE value="Transit - ComunicationNode relation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transit - ComunicationNode relation added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1615024756099">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615024756099" />
-    <state width="1877" height="546" key="GridCell.Tab.0.bottom" timestamp="1615036374538">
+    <state width="1877" height="546" key="GridCell.Tab.0.bottom" timestamp="1615037059054">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
-    <state width="1877" height="546" key="GridCell.Tab.0.center" timestamp="1615036374538">
+    <state width="1877" height="546" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615037059054" />
+    <state width="1877" height="546" key="GridCell.Tab.0.center" timestamp="1615037059054">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
-    <state width="1877" height="546" key="GridCell.Tab.0.left" timestamp="1615036374538">
+    <state width="1877" height="546" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615037059054" />
+    <state width="1877" height="546" key="GridCell.Tab.0.left" timestamp="1615037059054">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
-    <state width="1877" height="546" key="GridCell.Tab.0.right" timestamp="1615036374538">
+    <state width="1877" height="546" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615037059054" />
+    <state width="1877" height="546" key="GridCell.Tab.0.right" timestamp="1615037059054">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
+    <state width="1877" height="546" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615037059054" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1615022885503">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615022885503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615035140689">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615037186318">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615035140689" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615037186318" />
     <state x="2605" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1615022871081">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
