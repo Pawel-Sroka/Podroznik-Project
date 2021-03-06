@@ -18,11 +18,11 @@ public class AddUser {
         personalId = sc.nextLine();
 
         transaction.begin();
-        Users user = new Users();
-        user.setUserPersonalId(personalId);
-        user.setUserFirstName(firstName);
-        user.setUserLastName(lastName);
-        manager.persist(user);
+        Users newUser = new Users();
+        newUser.setUserPersonalId(personalId);
+        newUser.setUserFirstName(firstName);
+        newUser.setUserLastName(lastName);
+        manager.persist(newUser);
         transaction.commit();
 
 
