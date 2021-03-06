@@ -15,8 +15,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d57d0e12-9c8f-4aff-8e97-2f12d4cf488d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Tickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Tickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/ComunicationNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/ComunicationNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/ComunicationNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/ComunicationNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615034583338</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Tickets-Transit relation + user, Reservations refactor">
+      <created>1615035138667</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615035138667</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,37 +253,38 @@
     <MESSAGE value="users-reservations relation" />
     <MESSAGE value="users-reservations relation, fixed" />
     <MESSAGE value="Tickets-Reservations relation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tickets-Reservations relation" />
+    <MESSAGE value="Tickets-Transit relation + user, Reservations refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tickets-Transit relation + user, Reservations refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1615024756099">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615024756099" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615031837058">
+    <state width="1877" height="546" key="GridCell.Tab.0.bottom" timestamp="1615036374538">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615031837058">
+    <state width="1877" height="546" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
+    <state width="1877" height="546" key="GridCell.Tab.0.center" timestamp="1615036374538">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615031837058">
+    <state width="1877" height="546" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
+    <state width="1877" height="546" key="GridCell.Tab.0.left" timestamp="1615036374538">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615031837058">
+    <state width="1877" height="546" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
+    <state width="1877" height="546" key="GridCell.Tab.0.right" timestamp="1615036374538">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
+    <state width="1877" height="546" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1615022885503">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615022885503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615034591354">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615035140689">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615034591354" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615035140689" />
     <state x="2605" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1615022871081">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
