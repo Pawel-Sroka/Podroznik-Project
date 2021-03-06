@@ -13,7 +13,7 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
-public class ComunicationNode {
+public class CommunicationNode {
     @Id
     @GeneratedValue
     private Long nodeId;

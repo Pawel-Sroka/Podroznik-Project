@@ -1,10 +1,13 @@
 package project.controller;
 
+import project.service.ShowNodeList;
+
+import javax.persistence.EntityManager;
 import java.util.Scanner;
 
 public class Menu {
 
-    public static void menu () {
+    public static void menu (EntityManager manager) {
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("\n******* Witamy w Podróżnik 2.0 *******\n");
@@ -32,6 +35,7 @@ public class Menu {
                     break;
                 case 3:
                     System.out.println("Lista Wezwłów komunikacyjnych: ");
+                    ShowNodeList.showNodeList(manager);
                     break;
                 case 4:
                     System.out.println("Twoje bilety: ");

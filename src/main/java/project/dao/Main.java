@@ -1,6 +1,7 @@
 package project.dao;
 
 
+import project.controller.Menu;
 import project.model.*;
 
 import javax.persistence.EntityManager;
@@ -12,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         EntityManagerFactory factory =
-                SessionConnector.createFactory(ComunicationNode.class, Drivers.class, Reservations.class,
+                SessionConnector.createFactory(CommunicationNode.class, Drivers.class, Reservations.class,
                         Tickets.class, Transit.class, TransportCompany.class, Users.class, Vehicles.class );
         EntityManager manager = factory.createEntityManager();
         EntityTransaction transaction = manager.getTransaction();
@@ -45,20 +46,20 @@ public class Main {
         user1.setUserLastName("Górka");
 
 
-        ComunicationNode comunicationNode1 = new ComunicationNode();
-        comunicationNode1.setNodeName("Dworzec Główny");
-        comunicationNode1.setNodeCity("Kraków");
-        comunicationNode1.setNodeAdress("Pawia 10");
+        CommunicationNode communicationNode1 = new CommunicationNode();
+        communicationNode1.setNodeName("Dworzec Główny");
+        communicationNode1.setNodeCity("Kraków");
+        communicationNode1.setNodeAdress("Pawia 10");
 
-        ComunicationNode comunicationNode2 = new ComunicationNode();
-        comunicationNode2.setNodeName("Warszawa Centralna");
-        comunicationNode2.setNodeCity("Warszawa");
-        comunicationNode2.setNodeAdress("Aleje Jerozolimskie 54");
+        CommunicationNode communicationNode2 = new CommunicationNode();
+        communicationNode2.setNodeName("Warszawa Centralna");
+        communicationNode2.setNodeCity("Warszawa");
+        communicationNode2.setNodeAdress("Aleje Jerozolimskie 54");
 
-        ComunicationNode comunicationNode3 = new ComunicationNode();
-        comunicationNode3.setNodeName("Dworzec Centrlany");
-        comunicationNode3.setNodeCity("Wrocław");
-        comunicationNode3.setNodeAdress("Dworcowa 15");
+        CommunicationNode communicationNode3 = new CommunicationNode();
+        communicationNode3.setNodeName("Dworzec Centrlany");
+        communicationNode3.setNodeCity("Wrocław");
+        communicationNode3.setNodeAdress("Dworcowa 15");
 
 
         Drivers driver1 = new Drivers();
@@ -110,9 +111,9 @@ public class Main {
         manager.persist(user4);
         manager.persist(user5);
 
-        manager.persist(comunicationNode1);
-        manager.persist(comunicationNode2);
-        manager.persist(comunicationNode3);
+        manager.persist(communicationNode1);
+        manager.persist(communicationNode2);
+        manager.persist(communicationNode3);
 
         manager.persist(driver1);
         manager.persist(driver2);
@@ -122,6 +123,7 @@ public class Main {
         manager.persist(transportCompany1);
         manager.persist(transportCompany2);
 
+        Menu.menu(manager);
 
         transaction.commit();
         manager.close();

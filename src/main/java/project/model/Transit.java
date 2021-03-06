@@ -18,9 +18,9 @@ public class Transit {
     private LocalDateTime departueTime;//TODO if have time, change to zoned datetime
     private LocalDateTime arrivalTime;
     @ManyToOne
-    private ComunicationNode arrivalNode;
+    private CommunicationNode arrivalNode;
     @ManyToOne
-    private ComunicationNode departurNode;
+    private CommunicationNode departurNode;
 
     @OneToMany(mappedBy = "transit")
     private Set<TransportCompany> transportCompanySet = new HashSet<>();
