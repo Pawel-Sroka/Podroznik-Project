@@ -122,10 +122,11 @@ public class Main {
 
         manager.persist(transportCompany1);
         manager.persist(transportCompany2);
-
-        Menu.menu(manager);
-
         transaction.commit();
+
+        Menu.menu(manager,transaction);
+
+
         manager.close();
 
 
