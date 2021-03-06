@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>java-krk27-jdbc-hibernate</artifactId>
+    <artifactId>Podroznik-Project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -42,5 +42,6 @@
         </dependency>
 
     </dependencies>
+
 
 </project>
