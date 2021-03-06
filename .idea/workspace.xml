@@ -14,10 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d57d0e12-9c8f-4aff-8e97-2f12d4cf488d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Reservations.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Reservations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Tickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Tickets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615030993474</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="users-reservations relation, fixed">
+      <created>1615031934225</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615031934225</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,37 +227,38 @@
     <MESSAGE value="add entities and start to do relations between them" />
     <MESSAGE value="first relation" />
     <MESSAGE value="users-reservations relation" />
-    <option name="LAST_COMMIT_MESSAGE" value="users-reservations relation" />
+    <MESSAGE value="users-reservations relation, fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="users-reservations relation, fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1615024756099">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615024756099" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615031469118">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615031837058">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031469118" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615031469118">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615031837058">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031469118" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615031469118">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615031837058">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031469118" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615031469118">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615031837058">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031469118" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031837058" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1615022885503">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615022885503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615030995671">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615031935615">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615030995671" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031935615" />
     <state x="2605" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1615022871081">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
