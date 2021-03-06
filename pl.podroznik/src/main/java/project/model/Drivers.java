@@ -17,6 +17,8 @@ public class Drivers {
     private String driverFirstName;
     private String driverLastName;
     private Integer rate;
+    @ManyToOne
+    private TransportCompany company;
     @ManyToMany
     @JoinTable(
             name = "vehicles_of_driver",
