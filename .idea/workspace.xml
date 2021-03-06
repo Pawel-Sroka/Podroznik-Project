@@ -15,6 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d57d0e12-9c8f-4aff-8e97-2f12d4cf488d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Tickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Tickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615031934225</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Tickets-Reservations relation">
+      <created>1615034583338</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615034583338</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,7 +237,8 @@
     <MESSAGE value="first relation" />
     <MESSAGE value="users-reservations relation" />
     <MESSAGE value="users-reservations relation, fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="users-reservations relation, fixed" />
+    <MESSAGE value="Tickets-Reservations relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tickets-Reservations relation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1615024756099">
@@ -255,10 +265,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615022885503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615031935615">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615034591354">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615031935615" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615034591354" />
     <state x="2605" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1615022871081">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

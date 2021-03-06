@@ -22,11 +22,10 @@ public class Users {
     @OneToMany(mappedBy = "users")
     private Set<Reservations> reservationsSet = new HashSet<>();
 
-    public void addReservation(Reservations reservation){
+    public void addReservation(Reservations reservation) {
         reservationsSet.add(reservation);
         reservation.setUsers(this);
     }
-
 
 
 }
