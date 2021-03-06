@@ -19,7 +19,7 @@ public class Vehicles {
     private Long VehicleId;
     private String vehicleName;
     private Integer seatsNumber;
-    private String vehicleType;
+    private VehicleType vehicleType;
     @ManyToMany(mappedBy = "vehiclesSet")//iw vehicle jest opis relacji
     private Set<Drivers> driverSet = new HashSet<>();
 
