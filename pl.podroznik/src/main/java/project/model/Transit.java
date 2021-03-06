@@ -23,11 +23,27 @@ public class Transit {
     private ComunicationNode departurNode;
 
     @OneToMany(mappedBy = "transit")
+    private Set<TransportCompany> transportCompanySet = new HashSet<>();
+
+    @OneToMany(mappedBy = "transit")
+    private Set<Vehicles> vehiclesSet = new HashSet<>();
+
+    @OneToMany(mappedBy = "transit")
     private Set<Tickets> ticketsSet = new HashSet<>();
 
     public void addTicket(Tickets tickets) {
         ticketsSet.add(tickets);
         tickets.setTransit(this);
+    }
+
+    public void addVehicle (Vehicles vehicle) {
+        vehiclesSet.add(vehicle);
+        vehicle.setTransit(this);
+    }
+
+    public void addTransportCompany (TransportCompany company) {
+        transportCompanySet.add(company);
+        company.setTransit(this);
     }
 
 }
