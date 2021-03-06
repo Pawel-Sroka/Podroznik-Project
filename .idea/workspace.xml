@@ -13,18 +13,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d57d0e12-9c8f-4aff-8e97-2f12d4cf488d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/ComunicationNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/ComunicationNode.java" afterDir="false" />
+    <list default="true" id="708b4ee4-dd15-4281-b5c5-699efa5bd26f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/ComunicationNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/ComunicationNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +66,12 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="main.java.project" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gamer\IdeaProjects\Junit-Basic\Podroznik-Project\pl.podroznik" />
       <recent name="C:\Users\Gamer\IdeaProjects\Junit-Basic\Podroznik-Project\pl.podroznik\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.java.project" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
@@ -220,12 +210,12 @@
       <option name="project" value="LOCAL" />
       <updated>1615034583338</updated>
     </task>
-    <task id="LOCAL-00012" summary="Tickets-Transit relation + user, Reservations refactor">
-      <created>1615035138667</created>
+    <task id="LOCAL-00012" summary="Company - drivers - vehicles relation">
+      <created>1615037936256</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1615035138667</updated>
+      <updated>1615037936256</updated>
     </task>
     <option name="localTasksCounter" value="13" />
     <servers />
@@ -235,7 +225,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Dawid" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Dawid" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -253,49 +270,7 @@
     <MESSAGE value="users-reservations relation" />
     <MESSAGE value="users-reservations relation, fixed" />
     <MESSAGE value="Tickets-Reservations relation" />
-    <MESSAGE value="Tickets-Transit relation + user, Reservations refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tickets-Transit relation + user, Reservations refactor" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1615024756099">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615024756099" />
-    <state width="1877" height="546" key="GridCell.Tab.0.bottom" timestamp="1615036374538">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
-    <state width="1877" height="546" key="GridCell.Tab.0.center" timestamp="1615036374538">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
-    <state width="1877" height="546" key="GridCell.Tab.0.left" timestamp="1615036374538">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
-    <state width="1877" height="546" key="GridCell.Tab.0.right" timestamp="1615036374538">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="546" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615036374538" />
-    <state x="2381" y="165" key="SettingsEditor" timestamp="1615022885503">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615022885503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615035140689">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615035140689" />
-    <state x="2605" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1615022871081">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2605" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615022871081" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615030501279">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615030501279" />
-    <state x="2471" y="181" key="new project wizard" timestamp="1614506209194">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2471" y="181" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614506209194" />
+    <MESSAGE value="Company - drivers - vehicles relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Company - drivers - vehicles relation" />
   </component>
 </project>

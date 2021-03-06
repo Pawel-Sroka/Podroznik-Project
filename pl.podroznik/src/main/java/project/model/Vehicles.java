@@ -3,10 +3,7 @@ package project.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,6 +17,8 @@ public class Vehicles {
     private String vehicleName;
     private Integer seatsNumber;
     private VehicleType vehicleType;
+    @ManyToOne
+    private TransportCompany company;
     @ManyToMany(mappedBy = "vehiclesSet")//iw vehicle jest opis relacji
     private Set<Drivers> driverSet = new HashSet<>();
 

@@ -22,6 +22,8 @@ public class Transit {
     @ManyToOne
     private ComunicationNode departurNode;
 
+
+
     @OneToMany(mappedBy = "transit")
     private Set<Tickets> ticketsSet = new HashSet<>();
 
