@@ -60,7 +60,7 @@ public class Menu {
                     System.out.println("Dodaj firmę przewozową: ");
                     break;
                 case 10:
-                    System.out.println("Dziekujemy do zobaczenia ponownie:");
+                    System.out.println("Dziekujemy do zobaczenia ponownie.");
                     break;
                 default:
                     System.out.println("Wypierz poprawną opcję");
