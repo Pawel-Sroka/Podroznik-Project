@@ -26,24 +26,24 @@ public class Main {
         user1.setUserLastName("Kowalski");
 
         Users user2 = new Users();
-        user1.setUserPersonalId("98021563528");
-        user1.setUserFirstName("Tomasz");
-        user1.setUserLastName("Niedzielski");
+        user2.setUserPersonalId("98021563528");
+        user2.setUserFirstName("Tomasz");
+        user2.setUserLastName("Niedzielski");
 
         Users user3 = new Users();
-        user1.setUserPersonalId("20152056982");
-        user1.setUserFirstName("Grzegorz");
-        user1.setUserLastName("Potoczek");
+        user3.setUserPersonalId("20152056982");
+        user3.setUserFirstName("Grzegorz");
+        user3.setUserLastName("Potoczek");
 
         Users user4 = new Users();
-        user1.setUserPersonalId("87120552486");
-        user1.setUserFirstName("Andrzej");
-        user1.setUserLastName("Kotek");
+        user4.setUserPersonalId("87120552486");
+        user4.setUserFirstName("Andrzej");
+        user4.setUserLastName("Kotek");
 
         Users user5 = new Users();
-        user1.setUserPersonalId("76042512548");
-        user1.setUserFirstName("Terasa");
-        user1.setUserLastName("Górka");
+        user5.setUserPersonalId("76042512548");
+        user5.setUserFirstName("Terasa");
+        user5.setUserLastName("Górka");
 
 
         CommunicationNode communicationNode1 = new CommunicationNode();
