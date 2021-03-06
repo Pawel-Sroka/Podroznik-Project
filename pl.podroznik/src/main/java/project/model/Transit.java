@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import java.time.LocalDateTime;
 
 @Entity
@@ -18,9 +17,9 @@ public class Transit {
     private Long transitId;
     private LocalDateTime departueTime;//TODO if have time, change to zoned datetime
     private LocalDateTime arrivalTime;
-    private ComunicationNode arrivalNode;
-    private ComunicationNode departurNode;
-    @OneToMany
-    private Tickets ticket;
+/*    private ComunicationNode arrivalNode;
+    private ComunicationNode departurNode;*/
+    /*@OneToMany
+    private Tickets ticket;*/
 
 }
