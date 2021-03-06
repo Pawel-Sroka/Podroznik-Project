@@ -14,16 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="708b4ee4-dd15-4281-b5c5-699efa5bd26f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Drivers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/TransportCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/TransportCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Vehicles.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Vehicles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/controller/ConsoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Reservations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Tickets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/Transit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/TransportCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/target/classes/project/model/TransportCompany.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pl.podroznik/src/main/java/project/model/Transit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615034583338</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Company - drivers - vehicles relation">
+      <created>1615037936256</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615037936256</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +270,7 @@
     <MESSAGE value="users-reservations relation" />
     <MESSAGE value="users-reservations relation, fixed" />
     <MESSAGE value="Tickets-Reservations relation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tickets-Reservations relation" />
+    <MESSAGE value="Company - drivers - vehicles relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Company - drivers - vehicles relation" />
   </component>
 </project>

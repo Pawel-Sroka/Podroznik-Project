@@ -18,10 +18,10 @@ public class TransportCompany {
     @GeneratedValue
     private Long companyId;
     private String companyName;
-    @OneToMany(mappedBy = "transportCompany")
+    @OneToMany(mappedBy = "company")
     private Set<Drivers> driversSet = new HashSet<>();
 
-    @OneToMany(mappedBy = "transportCompany")
+    @OneToMany(mappedBy = "company")
     private Set<Vehicles> vehiclesSet = new HashSet<>();
 
     public void addVehicle (Vehicles vehicle) {
