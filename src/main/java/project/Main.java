@@ -1,20 +1,19 @@
 package project;
 
-import project.controller.ConsoleController;
+
 import project.controller.Menu;
+import project.dao.DbFiller;
+
+import javax.persistence.EntityManagerFactory;
 
 public class Main {
+
     public static void main(String[] args) {
 
-
-
-
-
-
+        EntityManagerFactory factory = DbFiller.createFactory();
+        //DbFiller.populateDb(); //aby pracowac na juz zrobionej bazie wykomentuj to i zmien  w hibernate.cfg z create na validate
+        Menu.menu(factory);
     }
-
-    //hello
-
     // Application starts
 
     // pakiety:
