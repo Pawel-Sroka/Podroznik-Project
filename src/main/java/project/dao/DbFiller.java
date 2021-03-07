@@ -155,14 +155,20 @@ public class DbFiller {
             vehicle1.setSeatsNumber(50);
             vehicle1.setVehicleType(VehicleType.COACH);
             vehicle1.getDriverSet().add(driver2);
+            vehicle1.addTransit(transit1);
+            vehicle1.addTransit(transit3);
 
             vehicle2.setVehicleName("Volvo");
             vehicle2.setSeatsNumber(50);
             vehicle2.setVehicleType(VehicleType.COACH);
+            vehicle2.addTransit(transit5);
+            vehicle2.addTransit(transit6);
 
             vehicle3.setVehicleName("Pendolino");
             vehicle3.setSeatsNumber(250);
             vehicle3.setVehicleType(VehicleType.TRAIN);
+            vehicle3.addTransit(transit2);
+            vehicle3.addTransit(transit4);
 
             manager.persist(vehicle1);
             manager.persist(vehicle2);
@@ -174,15 +180,21 @@ public class DbFiller {
             transportCompany1.setCompanyName("PolskiBus");
             transportCompany1.addDriver(driver2);
             transportCompany1.addVehicle(vehicle1);
+            transportCompany1.addTransit(transit3);
+            transportCompany1.addTransit(transit6);
 
             transportCompany2.setCompanyName("NeoBus");
             transportCompany2.addDriver(driver1);
             transportCompany2.addDriver(driver4);
             transportCompany2.addVehicle(vehicle2);
+            transportCompany2.addTransit(transit1);
+            transportCompany2.addTransit(transit5);
 
             transportCompany3.setCompanyName("Koleje Regionalne");
             transportCompany3.addDriver(driver3);
             transportCompany3.addVehicle(vehicle3);
+            transportCompany3.addTransit(transit2);
+            transportCompany3.addTransit(transit4);
 
             manager.persist(transportCompany1);
             manager.persist(transportCompany2);
@@ -220,8 +232,8 @@ public class DbFiller {
             transit1.setArrivalTime(LocalDateTime.of(2021,
                     03,10,13,30,00));
             transit1.addTicket(tickets1);
-            transit1.addVehicle(vehicle2);
-            transit1.addTransportCompany(transportCompany2);
+
+
 
             transit2.setDepartueTime(LocalDateTime.of(2021,
                     03,11,9,10,00));
@@ -230,8 +242,8 @@ public class DbFiller {
             transit2.setArrivalTime(LocalDateTime.of(2021,
                     03,11,10,30,00));
             transit2.addTicket(tickets2);
-            transit2.addVehicle(vehicle1);
-            transit2.addTransportCompany(transportCompany1);
+
+
 
             transit3.setDepartueTime(LocalDateTime.of(2021,
                     03,21,19,10,00));
@@ -240,12 +252,14 @@ public class DbFiller {
             transit3.setArrivalTime(LocalDateTime.of(2021,
                     03,21,21,30,00));
 
+
             transit4.setDepartueTime(LocalDateTime.of(2021,
                     03,11,19,10,00));
             transit4.setDeparturNode(communicationNode4);
             transit4.setArrivalNode(communicationNode1);
             transit4.setArrivalTime(LocalDateTime.of(2021,
                     03,11,20,30,00));
+
 
             transit5.setDepartueTime(LocalDateTime.of(2021,
                     03,11,15,10,00));
@@ -254,12 +268,14 @@ public class DbFiller {
             transit5.setArrivalTime(LocalDateTime.of(2021,
                     03,11,20,30,00));
 
+
             transit6.setDepartueTime(LocalDateTime.of(2021,
                     03,9,19,10,00));
             transit6.setDeparturNode(communicationNode4);
             transit6.setArrivalNode(communicationNode3);
             transit6.setArrivalTime(LocalDateTime.of(2021,
                     03,11,11,30,00));
+
 
             manager.persist(transit1);
             manager.persist(transit2);
