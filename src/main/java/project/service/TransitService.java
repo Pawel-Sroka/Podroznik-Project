@@ -17,10 +17,11 @@ public class TransitService {
                 .createQuery("from Transit", Transit.class);
         List<Transit> fromTransitList = fromTransit.getResultList();
         for (Transit transit : fromTransitList) {
-            System.out.println("Odjazd z : " + transit.getDeparturNode()
-                    + " do: " + transit.getArrivalNode()
-                    + " odjazd o godzinie: " + transit.getDepartueTime()
-                    + " przyjazd o godzinie: " + transit.getArrivalTime()
+            System.out.println("Data: " + transit.getDepartueTime().getDayOfMonth() + "/" + transit.getDepartueTime().getMonth() + "/" + transit.getDepartueTime().getYear()
+                    + "\nOdjazd z : " + transit.getDeparturNode().getNodeCity() + ", " + transit.getDeparturNode().getNodeName()
+                    + " do: " + transit.getArrivalNode().getNodeCity() + ", " + transit.getArrivalNode().getNodeName()
+                    + " \nOdjazd o godzinie: " + transit.getDepartueTime().getHour() + ":" + transit.getDepartueTime().getMinute()
+                    + " przyjazd o godzinie: " + transit.getArrivalTime().getHour() + ":" + transit.getArrivalTime().getMinute()
                     + ". \nPrzewoźnik: "
                     + ". \nDostępne miejsca: "
                     + ". \nPojazd: " );
