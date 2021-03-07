@@ -1,6 +1,7 @@
 package project.model;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -11,6 +12,11 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode(exclude = {"transportCompanySet",
+        "vehiclesSet",
+        "ticketsSet",
+        "departurNode",
+        "arrivalNode"})
 public class Transit {
     @Id
     @GeneratedValue

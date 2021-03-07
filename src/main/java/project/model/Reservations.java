@@ -11,7 +11,7 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
-@EqualsAndHashCode(exclude = "users")
+@EqualsAndHashCode(exclude = {"ticketsSet", "users"})
 public class Reservations {
     @Id
     @GeneratedValue
