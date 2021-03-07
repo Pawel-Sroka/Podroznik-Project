@@ -3,13 +3,17 @@ package project.service;
 import project.model.Users;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.Scanner;
 
 public class AddUser {
-    public static void addUser(EntityManager manager, EntityTransaction transaction){
+    public static void addUser(EntityManagerFactory factory){
+        EntityManager manager = factory.createEntityManager();
+        EntityTransaction transaction = manager.getTransaction();
+        transaction.begin();
         Scanner sc = new Scanner(System.in);
         String personalId,firstName,lastName;
         System.out.println("Podaj imię: ");

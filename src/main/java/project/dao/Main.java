@@ -12,15 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EntityManager manager = DbFiller.createFactory().createEntityManager();
+        EntityManagerFactory factory = DbFiller.createFactory();
         //DbFiller.populateDb(); //aby pracowac na juz zrobionej bazie wykomentuj to i zmien  w hibernate.cfg z create na validate
-        EntityTransaction transaction = manager.getTransaction();
-        transaction.begin();
 
-        Menu.menu(manager,transaction);
-
-
-        manager.close();
+        Menu.menu(factory);
 
 
 

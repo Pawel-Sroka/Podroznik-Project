@@ -12,7 +12,10 @@ import java.util.Scanner;
 
 public class ShowNodeList {
 
-    public static void showNodeList(EntityManager manager){
+    public static void showNodeList(EntityManagerFactory factory){
+        EntityManager manager = factory.createEntityManager();
+        EntityTransaction transaction = manager.getTransaction();
+        transaction.begin();
         Scanner sc =new Scanner(System.in);
 
     TypedQuery<CommunicationNode> fromCommunicationNode = manager.createQuery("from CommunicationNode", CommunicationNode.class);
@@ -24,5 +27,6 @@ public class ShowNodeList {
     }
         System.out.println("type enter to continue...");
     sc.nextLine();
+    transaction.commit();
 }
 }

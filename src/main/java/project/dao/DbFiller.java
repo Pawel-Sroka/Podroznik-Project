@@ -16,7 +16,8 @@ public class DbFiller {
             factory =
                     SessionConnector.createFactory(
                             CommunicationNode.class,
-                            Drivers.class, Reservations.class,
+                            Drivers.class,
+                            Reservations.class,
                             Tickets.class,
                             Transit.class,
                             TransportCompany.class,

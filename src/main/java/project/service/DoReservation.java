@@ -3,20 +3,24 @@ package project.service;
 import project.model.*;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.Scanner;
 
 public class DoReservation {
-    public static void doReservation(EntityManager manager){
+    public static void doReservation(EntityManagerFactory factory) {
+        EntityManager manager = factory.createEntityManager();
+        EntityTransaction transaction = manager.getTransaction();
+        transaction.begin();
         Reservations reservations = new Reservations();
         Scanner sc = new Scanner(System.in);
         System.out.println("Wybierz użytkownika: ");
         TypedQuery<Users> fromUsers = manager.createQuery("from Users", Users.class);
         List<Users> usersResultList = fromUsers.getResultList();
         System.out.println();
-        for (Users users: usersResultList){
+        for (Users users : usersResultList) {
             System.out.println(users.getUserId() + ". imie: " + users.getUserFirstName() + " nazwisko: " + users.getUserLastName());
         }
         Long selectedUserId = sc.nextLong();
@@ -24,7 +28,7 @@ public class DoReservation {
         TypedQuery<Users> userSelectedToReservation = manager.createQuery("select u from Users u where u.userId = ' " + selectedUserId + "'", Users.class);
         Users userTypedToReservation = userSelectedToReservation.getSingleResult();
 
-        TransitService.getTransitData(manager);
+        TransitService.getTransitData(factory);
         System.out.println("wybierz Id połączenia które chcesz zarazerwowac: ");
         Long transitSelectedId = sc.nextLong();
 
@@ -34,9 +38,8 @@ public class DoReservation {
         Tickets ticketToReservation = new Tickets();
 
         ticketToReservation.setReservations(reservations);
-        ticketToReservation.setPrice(typedTransitToReservation.getTransitId() * 15.0);
+        ticketToReservation.setPrice(typedTransitToReservation.getTransitId() * 2.0);
         ticketToReservation.setTransit(typedTransitToReservation);
-
 
         reservations.setUsers(userTypedToReservation);
         reservations.setStatus(ReservationStatus.CONFIRMED);
@@ -45,14 +48,11 @@ public class DoReservation {
         manager.persist(ticketToReservation);
         manager.persist(reservations);
 
-        System.out.println("Twoja rezerwacja: " + ticketToReservation.getTransit().getDeparturNode().getNodeCity() +  " - "
-                +ticketToReservation.getTransit().getArrivalNode().getNodeCity()
-        + "\n odjazd: " + ticketToReservation.getTransit().getDepartueTime().getHour() + ":" + ticketToReservation.getTransit().getDepartueTime().getMinute()
-        + "\n Cena: " + ticketToReservation.getPrice());
-
-
+        System.out.println("Twoja rezerwacja: " + ticketToReservation.getTransit().getDeparturNode().getNodeCity() + " - "
+                + ticketToReservation.getTransit().getArrivalNode().getNodeCity()
+                + "\n odjazd: " + ticketToReservation.getTransit().getDepartueTime().getHour() + ":" + ticketToReservation.getTransit().getDepartueTime().getMinute()
+                + "\n Cena: " + ticketToReservation.getPrice());
+        transaction.commit();
+        manager.close();
     }
-
-
-
 }
