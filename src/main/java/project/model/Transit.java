@@ -12,16 +12,16 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-@EqualsAndHashCode(exclude = {"transportCompanySet",
-        "vehiclesSet",
+@EqualsAndHashCode(exclude = {"transportCompany",
+        "vehicle",
         "ticketsSet",
         "departurNode",
         "arrivalNode"})
-@ToString(exclude = {"transportCompanySet",
-        "vehiclesSet",
+@ToString(exclude = {"transportCompany",
+        "vehicle",
         "ticketsSet",
         "departurNode",
-        "arrivalNode"})
+        "arrivalNode",})
 public class Transit {
     @Id
     @GeneratedValue
@@ -32,12 +32,11 @@ public class Transit {
     private CommunicationNode arrivalNode;
     @ManyToOne
     private CommunicationNode departurNode;
+    @ManyToOne
+    private TransportCompany transportCompany;
 
-    @OneToMany(mappedBy = "transit")
-    private Set<TransportCompany> transportCompanySet = new HashSet<>();
-
-    @OneToMany(mappedBy = "transit")
-    private Set<Vehicles> vehiclesSet = new HashSet<>();
+    @ManyToOne
+    private Vehicles vehicle;
 
     @OneToMany(mappedBy = "transit")
     private Set<Tickets> ticketsSet = new HashSet<>();
@@ -47,14 +46,8 @@ public class Transit {
         tickets.setTransit(this);
     }
 
-    public void addVehicle (Vehicles vehicle) {
-        vehiclesSet.add(vehicle);
-        vehicle.setTransit(this);
-    }
 
-    public void addTransportCompany (TransportCompany company) {
-        transportCompanySet.add(company);
-        company.setTransit(this);
-    }
+
+
 
 }

@@ -18,8 +18,8 @@ public class TransportCompany {
     @GeneratedValue
     private Long companyId;
     private String companyName;
-    @ManyToOne
-    private Transit transit;
+    @OneToMany (mappedBy = "transportCompany")
+    private Set<Transit> transitsSet = new HashSet<>();
     @OneToMany(mappedBy = "company")
     private Set<Drivers> driversSet = new HashSet<>();
 
@@ -34,6 +34,11 @@ public class TransportCompany {
     public void addDriver (Drivers driver) {
         driversSet.add(driver);
         driver.setCompany(this);
+    }
+
+    public void addTransit (Transit transit) {
+        transitsSet.add(transit);
+        transit.setTransportCompany(this);
     }
 
 }

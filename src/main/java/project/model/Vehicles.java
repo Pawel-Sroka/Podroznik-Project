@@ -11,8 +11,8 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-@EqualsAndHashCode(exclude = {"driverSet", "company", "transit"})
-@ToString(exclude = {"driverSet", "company", "transit"})
+@EqualsAndHashCode(exclude = {"driverSet", "company", "transitSet"})
+@ToString(exclude = {"driverSet", "company", "transitSet"})
 public class Vehicles {
     @Id
     @GeneratedValue
@@ -20,8 +20,8 @@ public class Vehicles {
     private String vehicleName;
     private Integer seatsNumber;
     private VehicleType vehicleType;
-    @ManyToOne
-    private Transit transit;
+    @OneToMany (mappedBy = "vehicle")
+    private Set<Transit> transitSet = new HashSet<>();
     @ManyToOne
     private TransportCompany company;
     @ManyToMany(mappedBy = "vehiclesSet")//w drivers jest opis relacji
@@ -30,5 +30,10 @@ public class Vehicles {
     public void addDriver(Drivers drivers){
         driverSet.add(drivers);
         drivers.addVehicle(this);
+    }
+
+    public void addTransit (Transit transit) {
+        transitSet.add(transit);
+        transit.setVehicle(this);
     }
 }
