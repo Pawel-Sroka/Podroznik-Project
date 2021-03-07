@@ -1,7 +1,10 @@
 package project.controller;
 
+import project.model.TransportCompany;
 import project.service.AddUser;
 import project.service.ShowNodeList;
+import project.service.TransportCompanyService;
+import project.service.VehicleService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
@@ -54,10 +57,11 @@ public class Menu {
                     break;
                 case 7:
                     System.out.println("Dodaj pojazd: ");
-
+                    VehicleService.addVehicle(manager, transaction);
                     break;
                 case 8:
                     System.out.println("Dodaj firmę przewozową: ");
+                    TransportCompanyService.addTransportCompany(manager,transaction);
                     break;
                 case 10:
                     System.out.println("Dziekujemy do zobaczenia ponownie.");
