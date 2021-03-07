@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         EntityManager manager = DbFiller.createFactory().createEntityManager();
-        DbFiller.populateDb(); //aby pracowac na juz zrobionej bazie wykomentuj to i zmien  w hibernate.cfg z create na validate
+        //DbFiller.populateDb(); //aby pracowac na juz zrobionej bazie wykomentuj to i zmien  w hibernate.cfg z create na validate
         EntityTransaction transaction = manager.getTransaction();
         transaction.begin();
 
