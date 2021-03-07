@@ -1,6 +1,7 @@
 package project.model;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
@@ -13,6 +14,7 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode(exclude = {"departue", "arrivalNode"})
 public class CommunicationNode {
     @Id
     @GeneratedValue

@@ -1,6 +1,7 @@
 package project.model;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode(exclude = {"vehiclesSet", "company"})
 public class Drivers {
     @Id
     @GeneratedValue
@@ -22,8 +24,8 @@ public class Drivers {
     @ManyToMany
     @JoinTable(
             name = "vehicles_of_driver",
-            joinColumns = @JoinColumn(name = "vehicle_id"), // tu trzeba nazwy z tabeli pobrac jakie sie utworza
-            inverseJoinColumns = @JoinColumn(name = "driver_id")
+            joinColumns = @JoinColumn(name = "VehicleId"), // tu trzeba nazwy z tabeli pobrac jakie sie utworza
+            inverseJoinColumns = @JoinColumn(name = "driverId")
     )
     private Set<Vehicles> vehiclesSet = new HashSet<>();
 
