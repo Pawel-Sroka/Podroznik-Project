@@ -11,8 +11,8 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-@EqualsAndHashCode(exclude = {"driversSet", "vehiclesSet", "transit"})
-@ToString(exclude = {"driversSet", "vehiclesSet", "transit"})
+@EqualsAndHashCode(exclude = {"driversSet", "vehiclesSet", "transitsSet"})
+@ToString(exclude = {"driversSet", "vehiclesSet", "transitsSet"})
 public class TransportCompany {
     @Id
     @GeneratedValue

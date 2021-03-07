@@ -1,5 +1,6 @@
 package project.service;
 
+import project.model.TransportCompany;
 import project.model.Users;
 import project.model.VehicleType;
 import project.model.Vehicles;
@@ -24,7 +25,12 @@ public class VehicleService {
         System.out.println("Dostępne typy: ");
         System.out.println(Arrays.toString(VehicleType.values()));
         System.out.println("Wybierz swój typ: ");
-        String vehicleType = sc.next().toUpperCase(Locale.ROOT);
+        String vehicleType = sc.next().toUpperCase();
+
+//        System.out.println("Przypisz pojazd do firmy przewozowej: ");
+//        System.out.println("Dostępne firmy przewozowe: ");
+//        TransitService.getTransitData(manager);
+//        String company = sc.nextLine();
 
 
 
@@ -41,8 +47,12 @@ public class VehicleService {
         }
 
 
+
+
         manager.persist(newVehicle);
         transaction.commit();
+        System.out.println();
+        System.out.println("Pojazd został dodany");
 
         }
 
