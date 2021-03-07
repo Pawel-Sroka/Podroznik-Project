@@ -1,8 +1,6 @@
 package project.model;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -12,6 +10,8 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
+@Builder
+@AllArgsConstructor
 @EqualsAndHashCode(exclude = {"transportCompanySet",
         "vehiclesSet",
         "ticketsSet",
