@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Menu {
 
+
     public static void menu (EntityManager manager, EntityTransaction transaction) {
         Scanner sc = new Scanner(System.in);
         int choice;

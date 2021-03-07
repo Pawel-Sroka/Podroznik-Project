@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class VehicleService {
 
     public static void addVehicle (EntityManager manager, EntityTransaction transaction) {
-
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj nazwę pojazdu: ");
         String name = sc.nextLine();
