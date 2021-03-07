@@ -8,6 +8,7 @@ import project.model.Vehicles;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
+import java.util.List;
 import java.util.Scanner;
 
 public class TransportCompanyService {
@@ -36,4 +37,13 @@ public class TransportCompanyService {
 
 
     }
+
+    public static void getCompanyData (EntityManager manager) {
+        TypedQuery<TransportCompany> fromTransportCompany = manager.createQuery("from TransportCompany", TransportCompany.class);
+        List<TransportCompany> fromCompanyList = fromTransportCompany.getResultList();
+        for (TransportCompany company : fromCompanyList) {
+            System.out.println(company.getCompanyName());
+        }
+    }
+
 }

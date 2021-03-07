@@ -33,6 +33,8 @@ public class AddUser {
             newUser.setUserLastName(lastName);
             manager.persist(newUser);
             transaction.commit();
+
+        System.out.println("Użytkownik został dodany");
         //}
 
     }
