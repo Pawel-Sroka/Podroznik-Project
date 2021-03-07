@@ -17,7 +17,6 @@ public class AddUser {
         System.out.println("podaj pesel: ");
         personalId = sc.nextLine();
 
-        transaction.begin();
         Users newUser = new Users();
         newUser.setUserPersonalId(personalId);
         newUser.setUserFirstName(firstName);
