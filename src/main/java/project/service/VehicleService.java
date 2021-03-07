@@ -1,10 +1,12 @@
 package project.service;
 
+import project.model.Users;
 import project.model.VehicleType;
 import project.model.Vehicles;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
+import javax.persistence.TypedQuery;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -22,6 +24,7 @@ public class VehicleService {
         System.out.println(Arrays.toString(VehicleType.values()));
         System.out.println("Wybierz swój typ: ");
         String vehicleType = sc.next();
+
 
 
         Vehicles newVehicle = new Vehicles();
