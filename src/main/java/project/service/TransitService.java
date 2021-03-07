@@ -17,7 +17,8 @@ public class TransitService {
         List<Transit> fromTransitList = fromTransit.getResultList();
         System.out.println("-----Lista dostępnych połączeń-----");
         for (Transit transit : fromTransitList) {
-            System.out.println("Data: " + transit.getDepartueTime().getDayOfMonth() + "/" + transit.getDepartueTime().getMonth() + "/" + transit.getDepartueTime().getYear()
+            System.out.println("Id połączenie: " + transit.getTransitId() +
+                    "\nData: " + transit.getDepartueTime().getDayOfMonth() + "/" + transit.getDepartueTime().getMonth() + "/" + transit.getDepartueTime().getYear()
                     + "\nOdjazd z : " + transit.getDeparturNode().getNodeCity() + ", " + transit.getDeparturNode().getNodeName()
                     + " do: " + transit.getArrivalNode().getNodeCity() + ", " + transit.getArrivalNode().getNodeName()
                     + " \nOdjazd o godzinie: " + transit.getDepartueTime().getHour() + ":" + transit.getDepartueTime().getMinute()
