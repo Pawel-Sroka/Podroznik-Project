@@ -1,10 +1,7 @@
 package project.controller;
 
 import project.model.TransportCompany;
-import project.service.AddUser;
-import project.service.ShowNodeList;
-import project.service.TransportCompanyService;
-import project.service.VehicleService;
+import project.service.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
@@ -35,6 +32,7 @@ public class Menu {
             switch (choice) {
                 case 1:
                     System.out.println("Lista dostępnych połączeń: ");
+                    TransitService.getTransitData(manager);
                     break;
                 case 2:
                     System.out.println("Dokonaj rezerwacji: ");
