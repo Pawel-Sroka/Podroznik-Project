@@ -13,11 +13,12 @@ import javax.persistence.ManyToOne;
 @Builder
 @AllArgsConstructor
 @EqualsAndHashCode(exclude = {"transit", "reservations"})
+@ToString(exclude = {"transit", "reservations"})
 public class Tickets {
     @Id
     @GeneratedValue
     private Long ticketId;
-    private Long price;
+    private Double price;
     @ManyToOne
     private Reservations reservations;
     @ManyToOne

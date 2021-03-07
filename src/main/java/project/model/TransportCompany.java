@@ -12,6 +12,7 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @EqualsAndHashCode(exclude = {"driversSet", "vehiclesSet", "transit"})
+@ToString(exclude = {"driversSet", "vehiclesSet", "transit"})
 public class TransportCompany {
     @Id
     @GeneratedValue

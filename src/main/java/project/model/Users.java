@@ -12,6 +12,7 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @EqualsAndHashCode(exclude = "reservationsSet")
+@ToString(exclude = "reservationsSet")
 public class Users {
     @Id
     @GeneratedValue
