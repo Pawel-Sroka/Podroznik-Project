@@ -1,8 +1,6 @@
 package project.model;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +12,8 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
+@Builder
+@AllArgsConstructor
 @EqualsAndHashCode(exclude = {"departue", "arrivalNode"})
 public class CommunicationNode {
     @Id
@@ -27,6 +27,14 @@ public class CommunicationNode {
     @OneToMany(mappedBy = "departurNode")
     private Set<Transit> departue = new HashSet<>();
 
+    public void addArrival(Transit transit){
+        arrivals.add(transit);
+        transit.setArrivalNode(this);
+    }
+    public void addDepartue(Transit transit){
+        departue.add(transit);
+        transit.setDeparturNode(this);
+    }
 
 
 }

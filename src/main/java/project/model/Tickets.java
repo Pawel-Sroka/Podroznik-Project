@@ -1,8 +1,6 @@
 package project.model;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +10,8 @@ import javax.persistence.ManyToOne;
 @Entity
 @Data
 @NoArgsConstructor
+@Builder
+@AllArgsConstructor
 @EqualsAndHashCode(exclude = {"transit", "reservations"})
 public class Tickets {
     @Id
