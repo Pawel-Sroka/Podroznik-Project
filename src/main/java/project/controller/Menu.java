@@ -4,13 +4,14 @@ import project.model.TransportCompany;
 import project.service.*;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import java.util.Scanner;
 
 public class Menu {
 
 
-    public static void menu (EntityManager manager, EntityTransaction transaction) {
+    public static void menu (EntityManagerFactory factory) {
         Scanner sc = new Scanner(System.in);
         int choice;
         do  {
@@ -33,15 +34,15 @@ public class Menu {
             switch (choice) {
                 case 1:
                     System.out.println("Lista dostępnych połączeń: ");
-                    TransitService.getTransitData(manager);
+                    TransitService.getTransitData(factory);
                     break;
                 case 2:
                     System.out.println("Dokonaj rezerwacji: ");
-                    DoReservation.doReservation(manager);
+                    DoReservation.doReservation(factory);
                     break;
                 case 3:
                     System.out.println("Lista Wezwłów komunikacyjnych: ");
-                    ShowNodeList.showNodeList(manager);
+                    ShowNodeList.showNodeList(factory);
                     break;
                 case 4:
                     System.out.println("Twoje bilety: ");
@@ -49,7 +50,7 @@ public class Menu {
                     break;
                 case 5:
                     System.out.println("Dodaj użytkownika: ");
-                    AddUser.addUser(manager,transaction);
+                    AddUser.addUser(factory);
                     break;
                 case 6:
                     System.out.println("Dodaj połączenie: ");
@@ -57,11 +58,11 @@ public class Menu {
                     break;
                 case 7:
                     System.out.println("Dodaj pojazd: ");
-                    VehicleService.addVehicle(manager, transaction);
+                    VehicleService.addVehicle(factory);
                     break;
                 case 8:
                     System.out.println("Dodaj firmę przewozową: ");
-                    TransportCompanyService.addTransportCompany(manager,transaction);
+                    TransportCompanyService.addTransportCompany(factory);
                     break;
                 case 10:
                     System.out.println("Dziekujemy do zobaczenia ponownie.");

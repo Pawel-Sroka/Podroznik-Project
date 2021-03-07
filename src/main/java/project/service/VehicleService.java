@@ -6,6 +6,7 @@ import project.model.VehicleType;
 import project.model.Vehicles;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import java.util.Arrays;
@@ -15,7 +16,10 @@ import java.util.Scanner;
 
 public class VehicleService {
 
-    public static void addVehicle (EntityManager manager, EntityTransaction transaction) {
+    public static void addVehicle (EntityManagerFactory factory) {
+        EntityManager manager = factory.createEntityManager();
+        EntityTransaction transaction = manager.getTransaction();
+        transaction.begin();
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj nazwę pojazdu: ");
         String name = sc.nextLine();
@@ -54,6 +58,7 @@ public class VehicleService {
         System.out.println();
         System.out.println("Pojazd został dodany");
 
+        manager.close();
         }
 
 

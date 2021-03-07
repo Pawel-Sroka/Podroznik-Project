@@ -3,6 +3,8 @@ package project.service;
 import project.model.Transit;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.Scanner;
@@ -10,7 +12,10 @@ import java.util.Scanner;
 public class TransitService {
 
 
-    public static void getTransitData (EntityManager manager) {
+    public static void getTransitData (EntityManagerFactory factory) {
+        EntityManager manager = factory.createEntityManager();
+        EntityTransaction transaction = manager.getTransaction();
+        transaction.begin();
         Scanner sc = new Scanner(System.in);
         TypedQuery<Transit> fromTransit = manager
                 .createQuery("from Transit order by departueTime", Transit.class);
@@ -30,6 +35,7 @@ public class TransitService {
         }
         System.out.println("type enter to continue...");
         sc.nextLine();
+        manager.close();
     }
 
 
