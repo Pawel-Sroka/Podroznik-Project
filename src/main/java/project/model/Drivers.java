@@ -6,12 +6,14 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @Entity
 @Data
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
 @EqualsAndHashCode(exclude = {"vehiclesSet", "company"})
+@ToString(exclude = {"vehiclesSet", "company"})
 public class Drivers {
     @Id
     @GeneratedValue

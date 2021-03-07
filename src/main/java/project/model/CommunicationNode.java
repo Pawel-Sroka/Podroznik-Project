@@ -15,6 +15,7 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @EqualsAndHashCode(exclude = {"departue", "arrivalNode"})
+@ToString(exclude = {"departue", "arrivalNode"})
 public class CommunicationNode {
     @Id
     @GeneratedValue

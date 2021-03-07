@@ -191,6 +191,19 @@ public class DbFiller {
         }//transport company
 
         {
+            tickets1.setReservations(reservations1);
+            tickets1.setTransit(transit1);
+            tickets1.setPrice(17.5);
+
+            tickets2.setTransit(transit2);
+            tickets2.setReservations(reservations1);
+            tickets2.setPrice(17.0);
+
+            manager.persist(tickets1);
+            manager.persist(tickets2);
+        }//tickets
+
+        {
             reservations1.setStatus(ReservationStatus.PENDING);
             reservations1.setUsers(user3);
             reservations1.addTicket(tickets1);

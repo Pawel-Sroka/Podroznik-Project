@@ -17,6 +17,11 @@ import java.util.Set;
         "ticketsSet",
         "departurNode",
         "arrivalNode"})
+@ToString(exclude = {"transportCompanySet",
+        "vehiclesSet",
+        "ticketsSet",
+        "departurNode",
+        "arrivalNode"})
 public class Transit {
     @Id
     @GeneratedValue
