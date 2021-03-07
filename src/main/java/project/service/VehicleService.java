@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 
@@ -23,14 +24,22 @@ public class VehicleService {
         System.out.println("Dostępne typy: ");
         System.out.println(Arrays.toString(VehicleType.values()));
         System.out.println("Wybierz swój typ: ");
-        String vehicleType = sc.next();
+        String vehicleType = sc.next().toUpperCase(Locale.ROOT);
 
 
 
         Vehicles newVehicle = new Vehicles();
         newVehicle.setVehicleName(name);
         newVehicle.setSeatsNumber(numberOfSeats);
-        newVehicle.setVehicleType(VehicleType.valueOf(vehicleType));
+        switch (vehicleType) {
+            case "COACH":
+                newVehicle.setVehicleType(VehicleType.COACH);
+            case "TRAIN":
+                newVehicle.setVehicleType(VehicleType.TRAIN);
+            case "SMALL_BUS":
+                newVehicle.setVehicleType(VehicleType.SMALL_BUS);
+        }
+
 
         manager.persist(newVehicle);
         transaction.commit();
