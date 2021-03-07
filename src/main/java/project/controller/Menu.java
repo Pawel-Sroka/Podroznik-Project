@@ -37,6 +37,7 @@ public class Menu {
                     break;
                 case 2:
                     System.out.println("Dokonaj rezerwacji: ");
+                    DoReservation.doReservation(manager);
                     break;
                 case 3:
                     System.out.println("Lista Wezwłów komunikacyjnych: ");
